@@ -1,0 +1,177 @@
+:root {
+    --main-color: rgb(16, 6, 73);
+    --second-color: rgb(249, 249, 123);
+}
+
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+ul {
+    list-style: none;
+}
+
+.container {
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@media (min-width:768px) {
+    .container {
+        width: 750px;
+    }
+}
+
+@media (min-width:992px) {
+    .container {
+        width: 970px;
+    }
+}
+
+@media (min-width:1200px) {
+    .container {
+        width: 1170px;
+    }
+}
+
+.header {
+    padding: 7px;
+    background-color: var(--main-color);
+}
+
+.header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav {
+    display: flex;
+    margin-right: 20px;
+}
+
+.link {
+    display: block;
+    padding: 15px;
+    text-decoration: none;
+    font-size: 20px;
+    color: var(--second-color);
+    transition: 0.3s;
+}
+
+.link:hover {
+    background-color: var(--second-color);
+    color: var(--main-color);
+    border-radius: 10px;
+}
+
+.todoform {
+    display: flex;
+    background-color: var(--main-color);
+    width: 450px;
+    height: 50px;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 5px;
+    margin-left: 15px;
+}
+
+.todoInput {
+    height: 40px;
+    width: 350px;
+    border-radius: 5px;
+    padding-left: 10px;
+    border: 1px solid var(--second-color);
+    color: var(--second-color);
+    background-color: var(--main-color);
+    margin-left: 20px;
+}
+
+.todobtn {
+    color: var(--main-color);
+    background-color: var(--second-color);
+    width: 100px;
+    height: 36px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 15px;
+    border: 1px solid var(--second-color);
+    border-radius: 3px;
+    margin-left: 15px;
+}
+
+.todoWrapper .container {
+    display: grid;
+    justify-content: center;
+    margin-top: 60px;
+    margin-bottom: 20px;
+}
+
+.todoWrapper .container div {
+    background-color: var(--main-color);
+    border-radius: 7px;
+    padding: 30px;
+}
+
+.todoWrapper .container h1 {
+    text-align: center;
+    color: var(--second-color);
+    padding: 30px;
+}
+
+.todoWrapper .container .todo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 15px;
+    min-width: 450px;
+    height: 30px;
+    background-color: var(--second-color);
+    color: var(--main-color);
+    padding: 20px;
+    border-radius: 5px;
+    border: 1px solid var(--second-color);
+    margin-top: 10px;
+
+}
+
+.todoWrapper .container .todo span {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.todoWrapper .container .task {
+    margin-bottom: 30px;
+}
+
+.todoWrapper .container .icon {
+    padding-left: 10px;
+
+}
+
+.main {
+    min-height: 100vh;
+}
+
+.footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: var(--second-color);
+    padding: 10px;
+    text-align: center;
+    color: var(--main-color);
+    font-size: 15px;
+
+}
